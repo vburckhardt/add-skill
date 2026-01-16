@@ -1,6 +1,6 @@
 {
   "name": "add-skill",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "Install agent skills onto coding agents (OpenCode, Claude Code, Codex, Cursor)",
   "type": "module",
   "bin": {
@@ -23,6 +23,7 @@
     "codex",
     "cursor",
     "antigravity",
+    "roo-code",
     "ai-agents"
   ],
   "repository": {
