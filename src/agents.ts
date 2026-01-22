@@ -24,6 +24,15 @@ export const agents: Record<AgentType, AgentConfig> = {
       return existsSync(join(process.cwd(), '.agent')) || existsSync(join(home, '.gemini/antigravity'));
     },
   },
+  bob: {
+    name: 'bob',
+    displayName: 'IBM Bob',
+    skillsDir: '.bob/skills',
+    globalSkillsDir: join(home, '.bob/skills'),
+    detectInstalled: async () => {
+      return existsSync(join(process.cwd(), '.bob')) || existsSync(join(home, '.bob'));
+    },
+  },
   'claude-code': {
     name: 'claude-code',
     displayName: 'Claude Code',

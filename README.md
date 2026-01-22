@@ -3,7 +3,7 @@
 Install agent skills onto your coding agents from any git repository.
 
 <!-- agent-list:start -->
-Supports **Opencode**, **Claude Code**, **Codex**, **Cursor**, and [13 more](#available-agents).
+Supports **Opencode**, **Claude Code**, **Codex**, **Cursor**, and [14 more](#available-agents).
 <!-- agent-list:end -->
 
 ## Quick Start
@@ -84,6 +84,7 @@ Skills can be installed to any of these supported agents. Use `-g, --global` to 
 |-------|-----------|--------------|-------------|
 | Amp | `amp` | `.agents/skills/` | `~/.config/agents/skills/` |
 | Antigravity | `antigravity` | `.agent/skills/` | `~/.gemini/antigravity/skills/` |
+| IBM Bob | `bob` | `.bob/skills/` | `~/.bob/skills/` |
 | Claude Code | `claude-code` | `.claude/skills/` | `~/.claude/skills/` |
 | Clawdbot | `clawdbot` | `skills/` | `~/.clawdbot/skills/` |
 | Codex | `codex` | `.codex/skills/` | `~/.codex/skills/` |
@@ -156,6 +157,7 @@ The CLI searches for skills in these locations within a repository:
 - `skills/.system/`
 - `.agents/skills/`
 - `.agent/skills/`
+- `.bob/skills/`
 - `.claude/skills/`
 - `./skills/`
 - `.codex/skills/`
