@@ -15,7 +15,7 @@ Supports **Opencode**, **Claude Code**, **Codex**, **Cursor**, and [14 more](#av
 ## Quick Start
 
 ```bash
-npx add-skill vercel-labs/agent-skills
+npx github:vburckhardt/add-skill vercel-labs/agent-skills
 ```
 
 ## What are Agent Skills?
@@ -35,19 +35,19 @@ The `<source>` argument accepts multiple formats:
 
 ```bash
 # GitHub shorthand
-npx add-skill vercel-labs/agent-skills
+npx github:vburckhardt/add-skill vercel-labs/agent-skills
 
 # Full GitHub URL
-npx add-skill https://github.com/vercel-labs/agent-skills
+npx github:vburckhardt/add-skill https://github.com/vercel-labs/agent-skills
 
 # Direct path to a skill in a repo
-npx add-skill https://github.com/vercel-labs/agent-skills/tree/main/skills/frontend-design
+npx github:vburckhardt/add-skill https://github.com/vercel-labs/agent-skills/tree/main/skills/frontend-design
 
 # GitLab URL
-npx add-skill https://gitlab.com/org/repo
+npx github:vburckhardt/add-skill https://gitlab.com/org/repo
 
 # Any git URL
-npx add-skill git@github.com:vercel-labs/agent-skills.git
+npx github:vburckhardt/add-skill git@github.com:vercel-labs/agent-skills.git
 ```
 
 ### Options
@@ -66,19 +66,19 @@ npx add-skill git@github.com:vercel-labs/agent-skills.git
 
 ```bash
 # List skills in a repository
-npx add-skill vercel-labs/agent-skills --list
+npx github:vburckhardt/add-skill vercel-labs/agent-skills --list
 
 # Install multiple specific skills
-npx add-skill vercel-labs/agent-skills --skill frontend-design --skill skill-creator
+npx github:vburckhardt/add-skill vercel-labs/agent-skills --skill frontend-design --skill skill-creator
 
 # Install to specific agents
-npx add-skill vercel-labs/agent-skills -a claude-code -a opencode
+npx github:vburckhardt/add-skill vercel-labs/agent-skills -a claude-code -a opencode
 
 # Non-interactive installation (CI/CD friendly)
-npx add-skill vercel-labs/agent-skills --skill frontend-design -g -a claude-code -y
+npx github:vburckhardt/add-skill vercel-labs/agent-skills --skill frontend-design -g -a claude-code -y
 
 # Install all skills from a repo
-npx add-skill vercel-labs/agent-skills -y -g
+npx github:vburckhardt/add-skill vercel-labs/agent-skills -y -g
 ```
 
 ## Available Agents
@@ -217,9 +217,9 @@ This CLI collects anonymous usage data to help improve the tool. No personal inf
 To disable telemetry, set either of these environment variables:
 
 ```bash
-DISABLE_TELEMETRY=1 npx add-skill vercel-labs/agent-skills
+DISABLE_TELEMETRY=1 npx github:vburckhardt/add-skill vercel-labs/agent-skills
 # or
-DO_NOT_TRACK=1 npx add-skill vercel-labs/agent-skills
+DO_NOT_TRACK=1 npx github:vburckhardt/add-skill vercel-labs/agent-skills
 ```
 
 Telemetry is also automatically disabled in CI environments.
