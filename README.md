@@ -1,3 +1,9 @@
+> Fork of vercel-labs/add-skill adding support for IBM Bob.
+
+
+---
+
+
 # add-skill
 
 Install agent skills onto your coding agents from any git repository.
