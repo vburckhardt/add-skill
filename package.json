@@ -13,7 +13,8 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm --dts --clean",
     "dev": "tsx src/index.ts",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build"
   },
   "keywords": [
     "cli",
@@ -22,6 +23,7 @@
     "ai-agents",
     "amp",
     "antigravity",
+    "bob",
     "claude-code",
     "clawdbot",
     "codex",
