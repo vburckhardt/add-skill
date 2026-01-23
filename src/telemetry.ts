@@ -32,7 +32,7 @@ function isCI(): boolean {
 }
 
 function isEnabled(): boolean {
-  return !process.env.DISABLE_TELEMETRY && !process.env.DO_NOT_TRACK;
+  return process.env.ENABLE_TELEMETRY === '1' && !process.env.DO_NOT_TRACK;
 }
 
 export function setVersion(version: string): void {
